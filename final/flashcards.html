@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard Creator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <style>
+      body{
+        background-color: #FFECFB;
+      }
+    </style>
+  </head>
+  <body><div id="cont3">
+    <header class="header3"><h1>Flashcard Creator</h1></header>
+
+   <div class="nav3"><nav>
+    <a href="map.html" id="a1">Food Map</a>
+    <a href="index.html" id="a2">About</a>
+    <a href="flashcards.html" id="a3" class="highlight">Flashcards</a>
+   </nav></div>
+
+   <div class="input"><input type="file" id="input" accept="application/pdf" /></div>
+
+   <div class="next"><button id="nextpage" disabled>Next Slide (Spacebar)</button></div>
+   
+   <div class="canvas"><canvas id="pdf"></canvas></div>
+
+   <div class = "clipper">
+    </div>
+   <div class="slidecontainer">
+    <input type="range" min="0" max="100" value="0" class="slider" id="croprange">
+  </div>
+
+   <div class="sound"><audio src="celebrate.mp3" controls>Your browser does not support audio playback.</audio></div>
+
+   <footer class="footer3"><p>Created by Kika, 2025. Free to use and redistribute!🎉</p></footer>
+   </div>
+  <script src="js.js"></script>
+  </body>
+</html>
